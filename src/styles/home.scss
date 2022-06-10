@@ -1,0 +1,182 @@
+$white1: rgb(192, 187, 187);
+
+
+.Container {
+    background-color: rgb(25, 28, 31);
+}
+
+.Item__Detail {
+    width: 80%;
+    margin: auto;
+    &--top {
+        position: relative;
+        &--image {
+            width: 100%;
+            border-radius: 15px;
+        }
+        &--icon {
+            position: absolute;
+            bottom: -20px;
+            transform: translateX(50%);
+            right: 50%;
+            width: 110px;
+            height: 110px;
+            .small_image {
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                border: 3px solid rgb(25, 28, 31);
+            }
+            .tick_icon {
+                position: absolute;
+                bottom: -10px;
+                right: -10px;
+            }
+        }
+    }
+
+    &--title {
+        width: 700px;
+        margin: auto;
+        text-align: center;
+        margin-top: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        > h2 {
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 100%;
+            text-align: center;
+            font-size: 28px;
+            line-height: 32px;
+            font-weight: 700;
+            color: white;
+        }
+        > p {
+            display: block;
+            color: rgb(216, 207, 207);
+            line-height: 22px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+    &--address {
+        display: flex;
+        width: 250px;
+        margin: 10px auto;
+        &--tag {
+            font-weight: 500;
+            background-color:rgb(12, 80, 255);
+            background-image: linear-gradient(to right, rgb(253, 110, 117) 0%, rgb(254, 90, 226) 48.96%, rgb(83, 145, 255) 100%) text;
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;
+        }
+        &--link {
+            display: flex;
+            margin-left: 20px;
+            font-size: 13px;
+            line-height: 20px;
+            color: $white1;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            img {
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+    &--stats {
+        display: flex;
+        height: 70px;
+        width: 660px;
+        margin: auto;
+        margin-bottom: 20px;
+        &--item {
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            border-left: 1px solid gray;
+            width: 120px !important;
+            > p {
+                color: $white1;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 20px;
+                margin-top: 10px;
+                display: inline-block;
+            }
+            > h2 {
+                color: white;
+                line-height: 30px;
+                font-size: 20px;
+            }
+        }
+        &--item:last-child {
+            border-right: 1px solid $white1;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        &--item:first-child {
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+    }
+
+    &--placebid {
+        display: flex;
+        width: 350px;
+        margin: auto;
+        margin-top: 20px;
+        &--text {
+            display: flex;
+            width: 400px;
+            border: 1px solid $white1;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 13px;
+            font-weight: 500;
+            color: white;
+            > p {
+                display: inline-block;
+                width: 150px;
+                flex-grow: 1;
+                margin-right: 20px;
+                margin-top: 7px;
+            }
+            button {
+                border-radius: 10px;
+                width: 100px;
+                line-height: 35px;
+                cursor: pointer;
+                background-color: rgb(48, 51, 54);
+                border: none;
+                color: white;
+            }
+            button:hover {
+                background-color: rgb(146, 150, 153);
+            }
+        }
+        &--icon {
+            display: flex;
+            margin-top: 4px;
+            margin-left: 20px;
+            .icon  {
+                width: 48px;
+                height: 48px;
+                background-color: rgb(48, 51, 54);
+                border-radius: 15px;
+                color: white;
+                margin: 5px;
+                svg {
+                    margin-top: 10px;
+                }
+            }
+            .icon:hover {
+                background-color: rgb(146, 150, 153);
+                cursor: pointer;
+            }
+        }
+    }
+}

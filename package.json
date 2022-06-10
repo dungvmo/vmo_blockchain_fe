@@ -1,0 +1,75 @@
+{
+  "name": "vmo-react-base",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.8.2",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.1.9",
+    "axios": "^0.21.1",
+    "clsx": "^1.1.1",
+    "i18next": "^20.3.2",
+    "i18next-browser-languagedetector": "^6.1.2",
+    "i18next-http-backend": "^1.2.6",
+    "node-sass": "6.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-error-boundary": "^3.1.3",
+    "react-i18next": "^11.11.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-slick": "^0.29.0",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "tsc --noEmit && eslint \"src/**/*.{js,jsx,ts,tsx\"}",
+    "lint:fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
+    "prettier": "prettier --check \"src/**/*.{js,jsx,ts,tsx,json,css,less,scss,md}\"",
+    "prettier:fix": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,less,scss,md}\"",
+    "rme": "rimraf \"src/**/*-example*\"",
+    "postinstall": "husky install",
+    "pre-commit": "npm run prettier && npm run lint"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.3.1",
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-router-dom": "^5.1.8",
+    "@types/react-slick": "^0.23.8",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.3.5"
+  }
+}
